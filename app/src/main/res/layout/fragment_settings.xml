@@ -150,6 +150,7 @@
             android:background="@color/view_background" />
 
         <LinearLayout
+            android:visibility="gone"
             android:id="@+id/linear_theme"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -202,6 +203,7 @@
         </LinearLayout>
 
         <View
+            android:visibility="gone"
             android:id="@+id/view_theme"
             android:layout_width="match_parent"
             android:layout_height="0.5dp"

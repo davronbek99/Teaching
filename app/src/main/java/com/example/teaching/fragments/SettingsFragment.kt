@@ -1,10 +1,12 @@
 package com.example.teaching.fragments
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.newentranttest.extensions.setBackPressed
 import com.example.newentranttest.ui.bottomSheetFragments.theme.ThemeBottomSheet
@@ -15,6 +17,7 @@ import com.example.teaching.utils.MySharedPreferences
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.yariksoffice.lingver.Lingver
 import java.util.*
+
 
 class SettingsFragment : Fragment(), LanguageBottomSheetDialogFragment.SetOnClickListener {
 
@@ -52,7 +55,14 @@ class SettingsFragment : Fragment(), LanguageBottomSheetDialogFragment.SetOnClic
 
         binding.apply {
             linearComplaints.setOnClickListener {
+                val telegram = Intent(
+                    Intent.ACTION_VIEW,
+                    Uri.parse("https://t.me/davronbekshergoziev")
+                ) //where 1111111111 - telegram userId
 
+                telegram.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+                telegram.setPackage("org.telegram.messenger")
+                startActivity(telegram)
             }
 
             binding.myProfileBox.setOnClickListener {
@@ -83,6 +93,10 @@ class SettingsFragment : Fragment(), LanguageBottomSheetDialogFragment.SetOnClic
                         }
                     })
                 dialog.show()
+            }
+
+            linearInfo.setOnClickListener {
+                findNavController().navigate(R.id.to_about_the_app_fragment)
             }
         }
     }

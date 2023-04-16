@@ -353,39 +353,6 @@
                     style="@style/txt_display_semibold_12"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/district_city"
-                    android:textAllCaps="true"
-                    android:textColor="@color/text_color_not_primary" />
-
-                <androidx.appcompat.widget.AppCompatTextView
-                    android:id="@+id/district_tv"
-                    style="@style/txt_display_regular_14"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_6sdp"
-                    android:text="+998 (55) 500 22 00"
-                    android:textColor="@color/brand_main_primary" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/_1sdp"
-                    android:layout_marginTop="@dimen/_14sdp"
-                    android:background="@color/brand_main_wild_sand" />
-
-
-            </androidx.appcompat.widget.LinearLayoutCompat>
-
-            <androidx.appcompat.widget.LinearLayoutCompat
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:paddingHorizontal="@dimen/_14sdp"
-                android:paddingTop="@dimen/_14sdp">
-
-                <androidx.appcompat.widget.AppCompatTextView
-                    style="@style/txt_display_semibold_12"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
                     android:text="@string/address"
                     android:textAllCaps="true"
                     android:textColor="@color/text_color_not_primary" />
@@ -399,39 +366,6 @@
                     android:text="Suzuk Ota st. 2, Shayhantahur District, Tashkent, Uzbekistan."
                     android:textColor="@color/brand_main_primary"
                     tools:ignore="HardcodedText" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/_1sdp"
-                    android:layout_marginTop="@dimen/_14sdp"
-                    android:background="@color/brand_main_wild_sand" />
-
-
-            </androidx.appcompat.widget.LinearLayoutCompat>
-
-            <androidx.appcompat.widget.LinearLayoutCompat
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:paddingHorizontal="@dimen/_14sdp"
-                android:paddingTop="@dimen/_14sdp">
-
-                <androidx.appcompat.widget.AppCompatTextView
-                    style="@style/txt_display_semibold_12"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/created_date"
-                    android:textAllCaps="true"
-                    android:textColor="@color/text_color_not_primary" />
-
-                <androidx.appcompat.widget.AppCompatTextView
-                    android:id="@+id/created_date_tv"
-                    style="@style/txt_display_regular_14"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_6sdp"
-                    android:text="25.06.2022"
-                    android:textColor="@color/brand_main_primary" />
 
                 <View
                     android:layout_width="match_parent"
