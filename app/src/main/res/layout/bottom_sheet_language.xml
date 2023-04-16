@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/language_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/lang_linear_back">
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_choose_language"
+        style="@style/txt_display_semibold_20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/choose_language"
+        android:textColor="@color/brand_main_on_primary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linear_uz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/tv_choose_language">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/txt_display_medium_14"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="19dp"
+            android:paddingBottom="19dp"
+            android:text="@string/lang_uz"
+            android:textColor="@color/brand_main_primary" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_uz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_circle_icon" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_uz"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/brand_main_wild_sand"
+        app:layout_constraintTop_toBottomOf="@id/linear_uz" />
+
+    <LinearLayout
+        android:id="@+id/linear_ru"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/linear_uz">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/txt_display_medium_14"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="19dp"
+            android:paddingBottom="19dp"
+            android:text="@string/lang_ru"
+            android:textColor="@color/brand_main_primary" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_ru"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_circle_icon" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_ru"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/brand_main_wild_sand"
+        app:layout_constraintTop_toBottomOf="@id/linear_ru" />
+
+    <LinearLayout
+        android:id="@+id/linear_eng"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linear_ru">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/txt_display_medium_14"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="19dp"
+            android:paddingBottom="19dp"
+            android:text="@string/lang_en"
+            android:textColor="@color/brand_main_primary" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_eng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_circle_icon" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="view_background">#D4D6DD</color>
+    <color name="border_color">#EDF1F7</color>
+    <color name="recommended_tv_color">#8F9BB3</color>
+    <color name="btn_back_color">#58B99D</color>
+    <color name="main_blue">#0088CC</color>
+    <color name="view_back">#E7E9EF</color>
+    <color name="secondary_button_border_color">#EDF1F7</color>
+
+    <!--    Seattle-->
+    <color name="seattle_140">#404247</color>
+    <color name="seattle_120">#55575C</color>
+    <color name="seattle_100">#808185</color>
+    <color name="seattle_60">#AAABAD</color>
+    <color name="seattle_30">#D5D5D6</color>
+    <color name="seattle_10">#E9EAEA</color>
+    <color name="seattle_05">#F8F8F8</color>
+    <color name="seattle_01">#FBFBFB</color>
+
+    <!--    London-->
+    <color name="london_40">#A3FFFFFF</color>
+    <color name="london_120">#3D2B2D33</color>
+
+    <!--    Geneva-->
+    <color name="geneva_120">#008E7D</color>
+    <color name="geneva_100">#19B28D</color>
+    <color name="geneva_60">#52C5A9</color>
+    <color name="geneva_30">#BFE9DF</color>
+    <color name="geneva_10">#E8F7F4</color>
+
+    <!--    Moscow-->
+    <color name="moscow_120">#C74952</color>
+    <color name="moscow_100">#ED6C66</color>
+    <color name="moscow_60">#F27C83</color>
+    <color name="moscow_30">#FACED1</color>
+    <color name="moscow_10">#FDEEEE</color>
+
+    <!--    Osaka-->
+    <color name="osaka_120">#CB662F</color>
+    <color name="osaka_100">#F88545</color>
+    <color name="osaka_60">#FAA373</color>
+    <color name="osaka_30">#FDDAC7</color>
+    <color name="osaka_10">#FEF3EC</color>
+
+    <!--    Peace-->
+    <color name="peace_120">#3287AF</color>
+    <color name="peace_100">#49A2CB</color>
+    <color name="peace_60">#88C2DD</color>
+    <color name="peace_30">#C7E3EF</color>
+    <color name="peace_10">#EFF7FA</color>
+
+    <!--    Miami-->
+    <color name="miami_100">#5ED1B6</color>
+    <color name="miami_30">#CFF1E9</color>
+    <color name="miami_10">#E7F8F4</color>
+
+    <!--    Sochi-->
+    <color name="sochi_100">#57B6ED</color>
+    <color name="sochi_30">#CDE9FA</color>
+    <color name="sochi_10">#E6F4FC</color>
+
+    <!--    Paris-->
+    <color name="paris_100">#9A99FB</color>
+    <color name="paris_30">#E1E0FE</color>
+    <color name="paris_10">#F0F0FE</color>
+
+    <!--    Tokyo-->
+    <color name="tokyo_100">#DC94DD</color>
+    <color name="tokyo_30">#F5DFF5</color>
+    <color name="tokyo_10">#FAEFFA</color>
+
+    <!--    Dubai-->
+    <color name="dubai_100">#FCB664</color>
+    <color name="dubai_30">#FEE9D1</color>
+    <color name="dubai_10">#FFF4E8</color>
+
+    <!--    Nice-->
+    <color name="nice_100">#FC9696</color>
+    <color name="nice_30">#FEE0E0</color>
+    <color name="nice_10">#FFEFEF</color>
+
+    <!--    Madrid-->
+    <color name="madrid_100">#F9C541</color>
+    <color name="madrid_10">#FEF6E1</color>
+
+    <!--    Porto-->
+    <color name="porto_100">#FEA17A</color>
+    <color name="porto_10">#FFF1EB</color>
+
+    <!--    Colored text-->
+    <color name="brand_main_primary_txt">#2B2D33</color>
+    <color name="seattle_120_txt">#55575C</color>
+    <color name="seattle_60_txt">#AAABAD</color>
+    <color name="moscow_60_txt">#F27C83</color>
+    <color name="geneva_100_txt">#19B28D</color>
+    <color name="brand_blue_accent_txt">#0088CC</color>
+    <color name="switchTrack">#DBDFE0</color>
+    <color name="status_bar_color_light">#282B30</color>
+    <color name="main_bg_color">#282B30</color>
+    <color name="home_color">#1900BCD4</color>
+
+    <color name="splash_color">#242424</color>
+</resources>

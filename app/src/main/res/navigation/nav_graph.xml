@@ -1,6 +1,116 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/nav_graph">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.teaching.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/class5Fragment"
+        android:name="com.example.teaching.fragments.Class5Fragment"
+        android:label="fragment_class5"
+        tools:layout="@layout/fragment_class5" />
+    <action
+        android:id="@+id/home_to_class_5"
+        app:destination="@id/class5Fragment"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right" />
+
+    <fragment
+        android:id="@+id/pdfFragment"
+        android:name="com.example.teaching.fragments.PdfFragment"
+        android:label="fragment_pdf"
+        tools:layout="@layout/fragment_pdf" />
+    <action
+        android:id="@+id/class_to_pdf"
+        app:destination="@id/pdfFragment"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right" />
+
+    <fragment
+        android:id="@+id/class6Fragment"
+        android:name="com.example.teaching.fragments.Class6Fragment"
+        android:label="fragment_class6"
+        tools:layout="@layout/fragment_class6" />
+    <action
+        android:id="@+id/home_to_class_6"
+        app:destination="@id/class6Fragment"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right" />
+
+    <fragment
+        android:id="@+id/class7Fragment"
+        android:name="com.example.teaching.fragments.Class7Fragment"
+        android:label="fragment_class7"
+        tools:layout="@layout/fragment_class7" />
+    <action
+        android:id="@+id/home_to_class_7"
+        app:destination="@id/class7Fragment"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right" />
+
+    <fragment
+        android:id="@+id/class8Fragment"
+        android:name="com.example.teaching.fragments.Class8Fragment"
+        android:label="fragment_class8"
+        tools:layout="@layout/fragment_class8" />
+    <action
+        android:id="@+id/home_to_class_8"
+        app:destination="@id/class8Fragment"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right" />
+
+    <fragment
+        android:id="@+id/class9Fragment"
+        android:name="com.example.teaching.fragments.Class9Fragment"
+        android:label="fragment_class9"
+        tools:layout="@layout/fragment_class9" />
+    <action
+        android:id="@+id/home_to_class_9"
+        app:destination="@id/class9Fragment"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right" />
+
+    <fragment
+        android:id="@+id/examFragment"
+        android:name="com.example.teaching.fragments.ExamFragment"
+        android:label="fragment_exam"
+        tools:layout="@layout/fragment_exam" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.teaching.fragments.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+
+    <fragment
+        android:id="@+id/myProfileFragmentFragment"
+        android:name="com.example.teaching.fragments.MyProfileFragment"
+        android:label="fragment_my_profile_fragment"
+        tools:layout="@layout/fragment_my_profile" />
+    <action
+        android:id="@+id/to_my_profile_fragment"
+        app:destination="@id/myProfileFragmentFragment"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right" />
 
 </navigation>

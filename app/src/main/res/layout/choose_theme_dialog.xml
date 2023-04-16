@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_12_back"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/_14sdp"
+    android:paddingTop="@dimen/_20sdp"
+    android:paddingBottom="@dimen/_20sdp">
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/auto_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingVertical="@dimen/_12sdp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/txt_display_regular_16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_14sdp"
+            android:layout_weight="1"
+            android:text="@string/auto"
+            android:textColor="@color/brand_main_primary" />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/auto_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_check_unchecked" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/brand_main_wild_sand" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/day_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingVertical="@dimen/_12sdp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/txt_display_regular_16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_14sdp"
+            android:layout_weight="1"
+            android:text="@string/day"
+            android:textColor="@color/brand_main_primary" />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/day_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_check_unchecked" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/brand_main_wild_sand" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/night_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingVertical="@dimen/_12sdp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/txt_display_regular_16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_14sdp"
+            android:layout_weight="1"
+            android:text="@string/night"
+            android:textColor="@color/brand_main_primary" />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/night_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_check_unchecked" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

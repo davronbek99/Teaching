@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        android:elevation="@dimen/_3sdp"
+        android:paddingHorizontal="@dimen/_14sdp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/baseline_chevron_left_24" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/txt_display_semibold_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/my_profile"
+            android:textColor="@color/brand_main_primary" />
+
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/_12sdp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/image"
+                        android:layout_width="@dimen/_64sdp"
+                        android:layout_height="@dimen/_64sdp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_carbon_user_avatar_filled"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_edit_image"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintRight_toRightOf="parent" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/status_tv"
+                    style="@style/txt_display_regular_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:background="@drawable/active_back"
+                    android:paddingHorizontal="@dimen/_6sdp"
+                    android:paddingVertical="@dimen/_4sdp"
+                    android:text="Active"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/name_tv"
+                    style="@style/txt_display_semibold_20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:text="@string/tv_name_surname"
+                    android:textColor="@color/brand_main_primary" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/logint_tv"
+                    style="@style/txt_display_regular_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:text="P1345252577"
+                    android:textColor="@color/seattle_100"
+                    tools:ignore="HardcodedText" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/_14sdp"
+                android:paddingTop="@dimen/_14sdp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/txt_display_semibold_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/last_family_name"
+                    android:textAllCaps="true"
+                    android:textColor="@color/text_color_not_primary" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/last_name_tv"
+                    style="@style/txt_display_regular_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:text="@string/tv_surname"
+                    android:textColor="@color/brand_main_primary" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_14sdp"
+                    android:background="@color/brand_main_wild_sand" />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/_14sdp"
+                android:paddingTop="@dimen/_14sdp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/txt_display_semibold_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/first_name"
+                    android:textAllCaps="true"
+                    android:textColor="@color/text_color_not_primary" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/first_name_tv"
+                    style="@style/txt_display_regular_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:text="@string/tv_name"
+                    android:textColor="@color/brand_main_primary" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_14sdp"
+                    android:background="@color/brand_main_wild_sand" />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/_14sdp"
+                android:paddingTop="@dimen/_14sdp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/txt_display_semibold_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/middle_name"
+                    android:textAllCaps="true"
+                    android:textColor="@color/text_color_not_primary" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/middle_name_tv"
+                    style="@style/txt_display_regular_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:text="@string/tv_middle_name"
+                    android:textColor="@color/brand_main_primary"
+                    tools:ignore="HardcodedText" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_14sdp"
+                    android:background="@color/brand_main_wild_sand" />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/_14sdp"
+                android:paddingTop="@dimen/_14sdp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/txt_display_semibold_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/date_of_birth"
+                    android:textAllCaps="true"
+                    android:textColor="@color/text_color_not_primary" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/birthday_tv"
+                    style="@style/txt_display_regular_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:text="25.09.1997"
+                    android:textColor="@color/brand_main_primary"
+                    tools:ignore="HardcodedText" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_14sdp"
+                    android:background="@color/brand_main_wild_sand" />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/_14sdp"
+                android:paddingTop="@dimen/_14sdp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/txt_display_semibold_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_phone_title"
+                    android:textAllCaps="true"
+                    android:textColor="@color/text_color_not_primary" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/phone_number_tv"
+                    style="@style/txt_display_regular_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:text="+998 (55) 500 22 00"
+                    android:textColor="@color/brand_main_primary"
+                    tools:ignore="HardcodedText" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_14sdp"
+                    android:background="@color/brand_main_wild_sand" />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/_14sdp"
+                android:paddingTop="@dimen/_14sdp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/txt_display_semibold_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/email"
+                    android:textAllCaps="true"
+                    android:textColor="@color/text_color_not_primary" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/email_tv"
+                    style="@style/txt_display_regular_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:text="info@abis.education"
+                    android:textColor="@color/brand_main_primary"
+                    tools:ignore="HardcodedText" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_14sdp"
+                    android:background="@color/brand_main_wild_sand" />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/_14sdp"
+                android:paddingTop="@dimen/_14sdp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/txt_display_semibold_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/region"
+                    android:textAllCaps="true"
+                    android:textColor="@color/text_color_not_primary" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/region_tv"
+                    style="@style/txt_display_regular_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:text="Tashkent city"
+                    android:textColor="@color/brand_main_primary"
+                    tools:ignore="HardcodedText" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_14sdp"
+                    android:background="@color/brand_main_wild_sand" />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/_14sdp"
+                android:paddingTop="@dimen/_14sdp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/txt_display_semibold_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/district_city"
+                    android:textAllCaps="true"
+                    android:textColor="@color/text_color_not_primary" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/district_tv"
+                    style="@style/txt_display_regular_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:text="+998 (55) 500 22 00"
+                    android:textColor="@color/brand_main_primary" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_14sdp"
+                    android:background="@color/brand_main_wild_sand" />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/_14sdp"
+                android:paddingTop="@dimen/_14sdp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/txt_display_semibold_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/address"
+                    android:textAllCaps="true"
+                    android:textColor="@color/text_color_not_primary" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/address_tv"
+                    style="@style/txt_display_regular_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:text="Suzuk Ota st. 2, Shayhantahur District, Tashkent, Uzbekistan."
+                    android:textColor="@color/brand_main_primary"
+                    tools:ignore="HardcodedText" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_14sdp"
+                    android:background="@color/brand_main_wild_sand" />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/_14sdp"
+                android:paddingTop="@dimen/_14sdp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/txt_display_semibold_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/created_date"
+                    android:textAllCaps="true"
+                    android:textColor="@color/text_color_not_primary" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/created_date_tv"
+                    style="@style/txt_display_regular_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:text="25.06.2022"
+                    android:textColor="@color/brand_main_primary" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_14sdp"
+                    android:background="@color/brand_main_wild_sand" />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
