@@ -101,4 +101,5 @@
     <color name="home_color">#1900BCD4</color>
 
     <color name="splash_color">#242424</color>
+    <color name="primary_abis">#66307F</color>
 </resources>

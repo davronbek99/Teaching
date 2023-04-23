@@ -41,8 +41,8 @@
 
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/image"
-                android:layout_width="@dimen/_64sdp"
-                android:layout_height="@dimen/_64sdp"
+                android:layout_width="@dimen/_72sdp"
+                android:layout_height="@dimen/_72sdp"
                 android:src="@drawable/ic_carbon_user_avatar_filled" />
 
 
@@ -60,16 +60,6 @@
                     android:layout_height="wrap_content"
                     android:text="Davronbek Sherg'oziyev"
                     android:textColor="@color/brand_main_primary"
-                    tools:ignore="HardcodedText" />
-
-                <androidx.appcompat.widget.AppCompatTextView
-                    android:id="@+id/login_tv"
-                    style="@style/txt_display_regular_14"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_2sdp"
-                    android:text="P1345252577"
-                    android:textColor="@color/seattle_100"
                     tools:ignore="HardcodedText" />
 
             </androidx.appcompat.widget.LinearLayoutCompat>

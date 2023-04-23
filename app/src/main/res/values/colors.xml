@@ -165,5 +165,6 @@
     <color name="splash_color">#242424</color>
     <color name="variant_color">#555555</color>
     <color name="text_color_not_primary">#8F9BB3</color>
+    <color name="primary_abis">#66307F</color>
 
 </resources>

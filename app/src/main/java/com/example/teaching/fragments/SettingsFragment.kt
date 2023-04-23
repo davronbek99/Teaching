@@ -1,5 +1,6 @@
 package com.example.teaching.fragments
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
@@ -40,6 +41,7 @@ class SettingsFragment : Fragment(), LanguageBottomSheetDialogFragment.SetOnClic
         setClickListeners()
     }
 
+    @SuppressLint("SetTextI18n")
     private fun init() {
 
         val nightMode = MySharedPreferences.getNightMode(requireContext())
@@ -49,6 +51,10 @@ class SettingsFragment : Fragment(), LanguageBottomSheetDialogFragment.SetOnClic
             "auto" -> getString(R.string.auto)
             else -> getString(R.string.night)
         }
+
+        binding.nameTv.text =
+            MySharedPreferences.getFirstname(requireContext()) +
+                    " " + MySharedPreferences.getSurname(requireContext())
     }
 
     private fun setClickListeners() {

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Teaching</string>
+    <string name="app_name">Education</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="str_science">Sciences</string>
     <string name="str_exam">Exam</string>
     <string name="str_setting">Settings</string>
     <string name="tv_setting">Settings</string>
-    <string name="tv_language">English</string>
+    <string name="tv_language">Русский</string>
     <string name="tv_lang_title">Language:</string>
     <string name="tv_theme_title">Theme:</string>
     <string name="tv_theme">Dark Mode</string>
@@ -35,4 +35,12 @@
     <string name="district_city">district (city):</string>
     <string name="address">Address:</string>
     <string name="created_date">Created date:</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="tv_first_name">First name</string>
+    <string name="tv_et_middle_name">Middle name</string>
+    <string name="tv_date_of_birth">Date of birth</string>
+    <string name="tv_phone_number">Phone number</string>
+    <string name="tv_email">Email</string>
+    <string name="tv_address">Address</string>
 </resources>

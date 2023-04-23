@@ -1,10 +1,12 @@
 package com.example.newentranttest.extensions
 
 import android.annotation.SuppressLint
+import android.content.Context
 import android.view.View
 import android.view.Window
 import android.view.WindowManager
 import android.webkit.MimeTypeMap
+import android.widget.Toast
 import androidx.activity.addCallback
 import androidx.annotation.ColorInt
 import androidx.fragment.app.Fragment
@@ -61,4 +63,8 @@ fun File.getExtension(): String {
     }
 
     return MimeTypeMap.getFileExtensionFromUrl(encoded).toLowerCase(Locale.getDefault())
+}
+
+fun toast(context: Context, text: String) {
+    Toast.makeText(context, text, Toast.LENGTH_SHORT).show()
 }
