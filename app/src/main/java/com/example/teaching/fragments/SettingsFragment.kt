@@ -72,7 +72,7 @@ class SettingsFragment : Fragment(), LanguageBottomSheetDialogFragment.SetOnClic
             }
 
             binding.myProfileBox.setOnClickListener {
-                findNavController().navigate(R.id.to_my_profile_fragment)
+                findNavController().navigate(R.id.to_example)
             }
 
             linearLanguage.setOnClickListener {

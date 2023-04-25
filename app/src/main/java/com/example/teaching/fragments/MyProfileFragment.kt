@@ -246,22 +246,22 @@ class MyProfileFragment : Fragment() {
             }).check()
     }
 
-    fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent) {
-        super.onActivityResult(requestCode, resultCode, data)
-        if (resultCode == RESULT_OK) {
-
-            // compare the resultCode with the
-            // SELECT_PICTURE constant
-            if (requestCode == SELECT_PICTURE) {
-                // Get the url of the image from data
-                val selectedImageUri = data.data
-                if (null != selectedImageUri) {
-                    // update the preview image in the layout
-                    binding.image.setImageURI(selectedImageUri)
-                }
-            }
-        }
-    }
+//    fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent) {
+//        super.onActivityResult(requestCode, resultCode, data)
+//        if (resultCode == RESULT_OK) {
+//
+//            // compare the resultCode with the
+//            // SELECT_PICTURE constant
+//            if (requestCode == SELECT_PICTURE) {
+//                // Get the url of the image from data
+//                val selectedImageUri = data.data
+//                if (null != selectedImageUri) {
+//                    // update the preview image in the layout
+//                    binding.image.setImageURI(selectedImageUri)
+//                }
+//            }
+//        }
+//    }
 
     fun imageChooser() {
 

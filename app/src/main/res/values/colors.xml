@@ -167,4 +167,6 @@
     <color name="text_color_not_primary">#8F9BB3</color>
     <color name="primary_abis">#66307F</color>
 
+    <color name="blue">#0000FF</color>
+
 </resources>

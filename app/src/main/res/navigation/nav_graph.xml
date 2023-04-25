@@ -125,4 +125,17 @@
         app:exitAnim="@anim/slide_out_left"
         app:popEnterAnim="@anim/slide_in_left"
         app:popExitAnim="@anim/slide_out_right" />
+
+    <fragment
+        android:id="@+id/exampleFragment"
+        android:name="com.example.teaching.fragments.ExampleFragment"
+        android:label="fragment_example"
+        tools:layout="@layout/fragment_example" />
+    <action
+        android:id="@+id/to_example"
+        app:destination="@id/exampleFragment"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right" />
 </navigation>
