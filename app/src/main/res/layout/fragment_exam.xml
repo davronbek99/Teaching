@@ -4,199 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#1900BCD4"
+    android:background="#19CFCFCF"
     android:padding="@dimen/dimen_16dp"
     tools:context=".fragments.ExamFragment">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <androidx.cardview.widget.CardView
-            android:elevation="@dimen/dimen_10dp"
-            android:id="@+id/card_class_5"
+        <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
-            android:layout_height="@dimen/dimen_128dp"
-            app:cardCornerRadius="@dimen/dimen_12dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            android:layout_height="@dimen/dimen_48dp"
+            android:background="@drawable/exam_back"
+            android:gravity="center">
 
-            <androidx.appcompat.widget.LinearLayoutCompat
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <androidx.appcompat.widget.AppCompatImageView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:src="@drawable/class5" />
-
-                <TextView
-                    android:id="@+id/tv_5"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:text="5-sinf"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    tools:ignore="HardcodedText" />
-            </androidx.appcompat.widget.LinearLayoutCompat>
-
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:elevation="@dimen/dimen_10dp"
-            android:id="@+id/card_class_6"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/dimen_128dp"
-            android:layout_marginTop="@dimen/dimen_16dp"
-            app:cardCornerRadius="@dimen/dimen_12dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/card_class_5">
-
-            <androidx.appcompat.widget.LinearLayoutCompat
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <androidx.appcompat.widget.AppCompatImageView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:src="@drawable/class6" />
-
-                <TextView
-                    android:id="@+id/tv_6"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:text="6-sinf"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    tools:ignore="HardcodedText" />
-            </androidx.appcompat.widget.LinearLayoutCompat>
-
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:elevation="@dimen/dimen_10dp"
-            android:id="@+id/card_class_7"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/dimen_128dp"
-            android:layout_marginTop="@dimen/dimen_16dp"
-            app:cardCornerRadius="@dimen/dimen_12dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/card_class_6">
-
-            <androidx.appcompat.widget.LinearLayoutCompat
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <androidx.appcompat.widget.AppCompatImageView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:src="@drawable/class7" />
-
-                <TextView
-                    android:id="@+id/tv_7"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:text="7-sinf"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    tools:ignore="HardcodedText" />
-            </androidx.appcompat.widget.LinearLayoutCompat>
-
-        </androidx.cardview.widget.CardView>
-
-
-        <androidx.cardview.widget.CardView
-            android:elevation="@dimen/dimen_10dp"
-            android:id="@+id/card_class_8"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/dimen_128dp"
-            android:layout_marginTop="@dimen/dimen_16dp"
-            app:cardCornerRadius="@dimen/dimen_12dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/card_class_7">
-
-            <androidx.appcompat.widget.LinearLayoutCompat
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <androidx.appcompat.widget.AppCompatImageView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:src="@drawable/class88" />
-
-                <TextView
-                    android:id="@+id/tv_8"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:text="8-sinf"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    tools:ignore="HardcodedText" />
-            </androidx.appcompat.widget.LinearLayoutCompat>
-
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/card_class_9"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/dimen_128dp"
-            android:layout_marginTop="@dimen/dimen_16dp"
-            android:layout_marginBottom="@dimen/dimen_16dp"
-            android:elevation="@dimen/dimen_10dp"
-            android:paddingBottom="@dimen/dimen_16dp"
-            app:cardCornerRadius="@dimen/dimen_12dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/card_class_8">
-
-            <androidx.appcompat.widget.LinearLayoutCompat
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <androidx.appcompat.widget.AppCompatImageView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:src="@drawable/class99" />
-
-                <TextView
-                    android:id="@+id/tv_9"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:text="9-sinf"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    tools:ignore="HardcodedText" />
-            </androidx.appcompat.widget.LinearLayoutCompat>
-
-        </androidx.cardview.widget.CardView>
-
-        <View
-            app:layout_constraintTop_toBottomOf="@id/card_class_9"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_50sdp" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5- sinf matematika"
+                tools:ignore="HardcodedText" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
 </androidx.core.widget.NestedScrollView>

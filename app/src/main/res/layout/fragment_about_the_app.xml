@@ -1,14 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/dimen_16dp"
     tools:context=".fragments.AboutTheAppFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        android:elevation="@dimen/_3sdp"
+        android:paddingHorizontal="@dimen/_14sdp">
 
-</FrameLayout>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/baseline_chevron_left_24" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/txt_display_semibold_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/tb_about_the_app"
+            android:textColor="@color/brand_main_primary" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_about_the_app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dimen_64dp"
+        android:text="@string/str_about_app_info"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_18sp" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -44,27 +44,27 @@ class ExampleFragment : Fragment() {
 //            ImagePicker.with(requireActivity()).crop().compress(1024).maxResultSize(1080, 1080)
 //                .start()
 
-            getContent.launch("image/*")
+//            getContent.launch("image/*")
 
         }
 
     }
 
-    private val getContent = registerForActivityResult(ActivityResultContracts.GetContent()) { uri: Uri? ->
-        // Handle the returned Uri
-        binding.image.setImageURI(uri)
-        try {
-            val myObj = File(uri)
-            if (myObj.createNewFile()) {
-                println("File created: " + myObj.name)
-            } else {
-                println("File already exists.")
-            }
-        } catch (e: IOException) {
-            println("An error occurred.")
-            e.printStackTrace()
-        }
-    }
+//    private val getContent = registerForActivityResult(ActivityResultContracts.GetContent()) { uri: Uri? ->
+//        // Handle the returned Uri
+//        binding.image.setImageURI(uri)
+//        try {
+//            val myObj = File(uri)
+//            if (myObj.createNewFile()) {
+//                println("File created: " + myObj.name)
+//            } else {
+//                println("File already exists.")
+//            }
+//        } catch (e: IOException) {
+//            println("An error occurred.")
+//            e.printStackTrace()
+//        }
+//    }
 
 //    private fun openSomeActivityForResult() {
 //        val intent = Intent(requireContext(), MainActivity::class.java)

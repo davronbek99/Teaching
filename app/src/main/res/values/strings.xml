@@ -42,4 +42,6 @@
     <string name="tv_phone_number">Phone number</string>
     <string name="tv_email">Email</string>
     <string name="tv_address">Address</string>
+    <string name="str_about_app_info">Education bu-maktab darslari bilan bog\'liq eng samarali va shaffof tarzda boshqarish uchun online platforma. Bu mavzularni o\'rganish, testlar ishlash, vazifalarni ilovadan ko\'rish, agar xatolik aniqlanganda admin bilan bog\'lanish va boshqa ko\'p funksiyalarga ega bo\'lgan foydalanuvchilar uchun qulay ilova. Bu oddiy foydalanuvchi interfeysi dizayni va qiziqarli xususiyatlarning ajoyib kombinatsiyasidir. O\'quvchilar, ota-onalar va o\'qituvchilar tomonidan yaxshi ko\'rib foydalaniladi.</string>
+    <string name="tb_about_the_app">About the app</string>
 </resources>
