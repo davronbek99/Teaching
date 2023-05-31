@@ -72,7 +72,7 @@ class SettingsFragment : Fragment(), LanguageBottomSheetDialogFragment.SetOnClic
             }
 
             binding.myProfileBox.setOnClickListener {
-                findNavController().navigate(R.id.to_example)
+                findNavController().navigate(R.id.to_my_profile_fragment)
             }
 
             linearLanguage.setOnClickListener {
@@ -119,6 +119,7 @@ class SettingsFragment : Fragment(), LanguageBottomSheetDialogFragment.SetOnClic
         binding.tvLanguageTitle.text = getString(R.string.tv_language)
         binding.tvComplaints.text = getString(R.string.tv_send_complaints)
         binding.tvLanguage.text = getString(R.string.tv_language)
+        binding.tvInfo.text = getString(R.string.tv_about_the_app)
 
         // update bottomNav view language
         val navigationView =

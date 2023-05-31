@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.newentranttest.extensions.setBackPressed
 import com.example.teaching.R
 import com.example.teaching.databinding.FragmentPdfBinding
 import com.github.barteksc.pdfviewer.PDFView
@@ -30,7 +31,7 @@ class PdfFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
+setBackPressed()
         val pdfView: PDFView = binding.pdfView
 
         when (valueStr) {

@@ -91,7 +91,7 @@
 
     <fragment
         android:id="@+id/examFragment"
-        android:name="com.example.teaching.fragments.ExamFragment"
+        android:name="com.example.teaching.fragments.test.ExamFragment"
         android:label="fragment_exam"
         tools:layout="@layout/fragment_exam" />
     <fragment
@@ -134,6 +134,32 @@
     <action
         android:id="@+id/to_example"
         app:destination="@id/exampleFragment"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right" />
+
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.example.teaching.fragments.test.ResultFragment"
+        android:label="fragment_result"
+        tools:layout="@layout/fragment_result" />
+    <action
+        android:id="@+id/to_result"
+        app:destination="@id/resultFragment"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right" />
+
+    <fragment
+        android:id="@+id/testFragment"
+        android:name="com.example.teaching.fragments.test.TestFragment"
+        android:label="fragment_test"
+        tools:layout="@layout/fragment_test" />
+    <action
+        android:id="@+id/to_test"
+        app:destination="@id/testFragment"
         app:enterAnim="@anim/slide_in_right"
         app:exitAnim="@anim/slide_out_left"
         app:popEnterAnim="@anim/slide_in_left"

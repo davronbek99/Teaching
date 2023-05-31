@@ -51,7 +51,7 @@ class MainActivity : AppCompatActivity() {
         return navController.navigateUp() || super.onSupportNavigateUp()
     }
 
-    private fun setBottomNav(){
+    private fun setBottomNav() {
         val navHostFragment =
             supportFragmentManager.findFragmentById(R.id.navHostFragment) as NavHostFragment
         navController = navHostFragment.findNavController()
@@ -84,6 +84,13 @@ class MainActivity : AppCompatActivity() {
                     )
                 }
 
+                R.id.resultFragment -> {
+                    statusBarColor(
+                        ResourcesCompat.getColor(resources, R.color.green, theme),
+                        ResourcesCompat.getColor(resources, R.color.white, theme), true
+                    )
+                }
+
                 else -> {
                     //change status bar color
                     statusBarColor(
@@ -99,7 +106,7 @@ class MainActivity : AppCompatActivity() {
         navController.addOnDestinationChangedListener { _, destination, _ ->
             when (destination.id) {
                 R.id.homeFragment, R.id.examFragment,
-                 R.id.settingsFragment-> {
+                R.id.settingsFragment -> {
                     binding.coordinator.visibility = View.VISIBLE
                 }
                 else -> {

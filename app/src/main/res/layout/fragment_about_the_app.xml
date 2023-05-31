@@ -4,7 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:paddingHorizontal="@dimen/dimen_16dp"
     tools:context=".fragments.AboutTheAppFragment">
 
     <RelativeLayout
@@ -26,14 +25,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:text="@string/tb_about_the_app"
+            android:text="@string/tv_about_the_app"
             android:textColor="@color/brand_main_primary" />
 
     </RelativeLayout>
 
     <TextView
         android:id="@+id/tv_about_the_app"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="@dimen/dimen_64dp"

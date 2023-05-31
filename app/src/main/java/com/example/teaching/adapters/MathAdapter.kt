@@ -32,7 +32,7 @@ class MathAdapter(var testList: List<MathTest>, var onClick: OnClickTestListener
                     tvQuestion.visibility = View.GONE
                     imageView.visibility = View.VISIBLE
                     val base64QuesImg: String =
-                        testList[adapterPosition].qImg.split(",").get(index = 1)
+                        testList[adapterPosition].qImg.split(",").get(index = 0)
 
                     val imageAsBytesQuesImg: ByteArray =
                         Base64.decode(base64QuesImg.toByteArray(), Base64.DEFAULT)
@@ -135,13 +135,13 @@ class MathAdapter(var testList: List<MathTest>, var onClick: OnClickTestListener
     ) {
 
         val base64Img1: String =
-            testList[adapterPosition].img1.split(",").get(index = 1)
+            testList[adapterPosition].img1.split(",").get(index = 0)
         val base64Img2: String =
-            testList[adapterPosition].img2.split(",").get(index = 1)
+            testList[adapterPosition].img2.split(",").get(index = 0)
         val base64Img3: String =
-            testList[adapterPosition].img3.split(",").get(index = 1)
+            testList[adapterPosition].img3.split(",").get(index = 0)
         val base64Img4: String =
-            testList[adapterPosition].img4.split(",").get(index = 1)
+            testList[adapterPosition].img4.split(",").get(index = 0)
 
         val imageAsBytesImg1: ByteArray =
             Base64.decode(base64Img1.toByteArray(), Base64.DEFAULT)

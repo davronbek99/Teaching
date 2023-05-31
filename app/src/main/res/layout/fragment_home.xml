@@ -39,7 +39,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="5-sinf"
+                    android:text="@string/tv_class5"
                     android:textColor="@color/black"
                     android:textSize="20sp"
                     tools:ignore="HardcodedText" />
@@ -75,7 +75,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="6-sinf"
+                    android:text="@string/tv_class_6"
                     android:textColor="@color/black"
                     android:textSize="20sp"
                     tools:ignore="HardcodedText" />
@@ -111,7 +111,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="7-sinf"
+                    android:text="@string/tv_class7"
                     android:textColor="@color/black"
                     android:textSize="20sp"
                     tools:ignore="HardcodedText" />
@@ -148,7 +148,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="8-sinf"
+                    android:text="@string/tv_class8"
                     android:textColor="@color/black"
                     android:textSize="20sp"
                     tools:ignore="HardcodedText" />
@@ -186,7 +186,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="9-sinf"
+                    android:text="@string/tv_class9"
                     android:textColor="@color/black"
                     android:textSize="20sp"
                     tools:ignore="HardcodedText" />

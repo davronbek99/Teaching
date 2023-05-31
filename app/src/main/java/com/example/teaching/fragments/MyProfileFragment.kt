@@ -2,10 +2,12 @@ package com.example.teaching.fragments
 
 import android.Manifest
 import android.annotation.SuppressLint
-import android.app.Activity.RESULT_OK
 import android.content.Context
+import android.content.ContextWrapper
 import android.content.Intent
 import android.content.pm.PackageManager
+import android.graphics.Bitmap
+import android.graphics.BitmapFactory
 import android.net.Uri
 import android.os.Bundle
 import android.provider.OpenableColumns
@@ -14,9 +16,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.webkit.MimeTypeMap
+import android.widget.ImageView
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
+import androidx.test.core.app.ApplicationProvider.getApplicationContext
 import com.bumptech.glide.Glide
 import com.example.newentranttest.extensions.getExtension
 import com.example.newentranttest.extensions.setBackPressed
@@ -32,8 +36,8 @@ import com.karumi.dexter.listener.single.PermissionListener
 import okhttp3.MediaType.Companion.toMediaType
 import okhttp3.MultipartBody
 import okhttp3.RequestBody
-import java.io.File
-import java.io.FileOutputStream
+import java.io.*
+
 
 class MyProfileFragment : Fragment() {
     private lateinit var binding: FragmentMyProfileBinding
@@ -78,7 +82,7 @@ class MyProfileFragment : Fragment() {
         binding.image.setOnClickListener {
             if (requireContext().checkCallingOrSelfPermission(Manifest.permission.READ_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED) {
                 getImage.launch("image/*")
-              imageChooser()
+//                saveImage()
             } else {
                 requestPermission()
             }
@@ -187,6 +191,53 @@ class MyProfileFragment : Fragment() {
 
     }
 
+    private fun saveToInternalStorage(bitmapImage: Bitmap): String? {
+        val cw = ContextWrapper(getApplicationContext())
+        // path to /data/data/yourapp/app_data/imageDir
+        val directory = cw.getDir("imageDir", Context.MODE_PRIVATE)
+        // Create imageDir
+        val mypath = File(directory, "profile.jpg")
+        var fos: FileOutputStream? = null
+        try {
+            fos = FileOutputStream(mypath)
+            // Use the compress method on the BitMap object to write image to the OutputStream
+            bitmapImage.compress(Bitmap.CompressFormat.PNG, 100, fos)
+        } catch (e: java.lang.Exception) {
+            e.printStackTrace()
+        } finally {
+            try {
+                fos!!.close()
+            } catch (e: IOException) {
+                e.printStackTrace()
+            }
+        }
+        return directory.absolutePath
+    }
+
+    private fun loadImageFromStorage(path: String) {
+        try {
+            val f = File(path, "profile.jpg")
+            val b = BitmapFactory.decodeStream(FileInputStream(f))
+            val img: ImageView = binding.image
+            img.setImageBitmap(b)
+        } catch (e: FileNotFoundException) {
+            e.printStackTrace()
+        }
+    }
+
+    fun imageChooser() {
+
+        // create an instance of the
+        // intent of the type image
+        val i = Intent()
+        i.type = "image/*"
+        i.action = Intent.ACTION_GET_CONTENT
+
+        // pass the constant to compare it
+        // with the returned requestCode
+        startActivityForResult(Intent.createChooser(i, "Select Picture"), SELECT_PICTURE)
+    }
+
     private val getImage = registerForActivityResult(ActivityResultContracts.GetContent()) {
         if (it != null) {
 
@@ -211,7 +262,7 @@ class MyProfileFragment : Fragment() {
 
 //                viewModel.updatePhoto(photoBody)
 //                binding.loadingLayout.visibility = View.VISIBLE
-//
+
                 Glide.with(binding.image).load(it)
                     .placeholder(R.drawable.ic_carbon_user_avatar_filled)
                     .into(binding.image)
@@ -230,7 +281,7 @@ class MyProfileFragment : Fragment() {
                 override fun onPermissionDenied(response: PermissionDeniedResponse?) { /* ... */
                     val intent = Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS)
                     val uri: Uri =
-                        Uri.fromParts("package", requireActivity().packageName, null)
+                        Uri.fromParts("package", requireActivity().getPackageName(), null)
                     intent.data = uri
                     startActivity(intent)
                 }
@@ -244,36 +295,6 @@ class MyProfileFragment : Fragment() {
 
 
             }).check()
-    }
-
-//    fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent) {
-//        super.onActivityResult(requestCode, resultCode, data)
-//        if (resultCode == RESULT_OK) {
-//
-//            // compare the resultCode with the
-//            // SELECT_PICTURE constant
-//            if (requestCode == SELECT_PICTURE) {
-//                // Get the url of the image from data
-//                val selectedImageUri = data.data
-//                if (null != selectedImageUri) {
-//                    // update the preview image in the layout
-//                    binding.image.setImageURI(selectedImageUri)
-//                }
-//            }
-//        }
-//    }
-
-    fun imageChooser() {
-
-        // create an instance of the
-        // intent of the type image
-        val i = Intent()
-        i.type = "image/*"
-        i.action = Intent.ACTION_GET_CONTENT
-
-        // pass the constant to compare it
-        // with the returned requestCode
-        startActivityForResult(Intent.createChooser(i, "Select Picture"), SELECT_PICTURE)
     }
 
     @SuppressLint("Recycle")
@@ -316,4 +337,5 @@ class MyProfileFragment : Fragment() {
 
         return file
     }
+
 }

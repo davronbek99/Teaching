@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="24dp">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="190dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:text="@string/tv_finish_dialog"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_48dp"
+                android:layout_marginEnd="12dp"
+                android:backgroundTint="#3F495E"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="@string/tv_no"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                app:cornerRadius="@dimen/dimen_6dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_exit"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_48dp"
+                android:layout_marginStart="12dp"
+                android:backgroundTint="#01D8D0"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="@string/tv_yes"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                app:cornerRadius="@dimen/dimen_6dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>
