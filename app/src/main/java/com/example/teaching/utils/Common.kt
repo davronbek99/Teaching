@@ -2,6 +2,7 @@ package com.example.teaching.utils
 
 import android.annotation.SuppressLint
 import android.content.Context
+import android.graphics.Bitmap
 import androidx.lifecycle.MutableLiveData
 
 @SuppressLint("StaticFieldLeak")
@@ -12,6 +13,14 @@ object Common {
 
     //change language
     var changeLanguage: MutableLiveData<Boolean> = MutableLiveData(false)
+
+    var isPhotoChanging: Boolean = false
+    var fromConfirmPhotoFragment: Boolean = false
+
+    var isPhotoChangingForFragments = false
+    var successLiveData: MutableLiveData<Int> = MutableLiveData(-1)
+    var fromMutableLiveData: MutableLiveData<String?> = MutableLiveData(null)
+    var bitmapMutableLiveData: MutableLiveData<Bitmap?> = MutableLiveData(null)
 //
 //    //adding assignment
 //    var selectedClass: Class? = null

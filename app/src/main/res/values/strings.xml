@@ -67,4 +67,11 @@
     <string name="tv_error_count">Wrong answers</string>
     <string name="tv_main_window">"Return to the main window"</string>
     <string name="tv_edit">Change</string>
+    <string name="camera">\nCamera</string>
+    <string name="gallery">\nGallery</string>
+    <string name="add_photo">\nAdd Photo</string>
+    <string name="how_does_it_look">\nHow does it look?</string>
+    <string name="how_look_des">\nMake sure your face is centered and visible. This photo will help customers recognize you.</string>
+    <string name="retake">\nAgain</string>
+    <string name="ready">\nReady</string>
 </resources>

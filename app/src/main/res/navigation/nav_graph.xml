@@ -164,4 +164,29 @@
         app:exitAnim="@anim/slide_out_left"
         app:popEnterAnim="@anim/slide_in_left"
         app:popExitAnim="@anim/slide_out_right" />
+
+    <fragment
+        android:id="@+id/confirmPhotoFragment"
+        android:name="com.example.teaching.fragments.ConfirmPhotoFragment"
+        android:label="ConfirmPhotoFragment"
+        tools:layout="@layout/fragment_confirm_photo"/>
+    <action
+        android:id="@+id/to_confirm_photo_fragment"
+        app:destination="@id/confirmPhotoFragment"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right" />
+    <fragment
+        tools:layout="@layout/fragment_camera"
+        android:id="@+id/cameraFragment"
+        android:name="com.example.teaching.fragments.CameraFragment"
+        android:label="CameraFragment" />
+    <action
+        android:id="@+id/to_camera"
+        app:destination="@id/cameraFragment"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right" />
 </navigation>
