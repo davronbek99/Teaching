@@ -35,7 +35,7 @@
         android:layout_marginHorizontal="@dimen/_14sdp"
         android:layout_marginTop="@dimen/_12sdp"
         android:drawableEnd="@drawable/ic_star"
-        android:text="O'zgartirish"
+        android:text="@string/tv_edit"
         android:textColor="@color/seattle_120" />
 
     <androidx.appcompat.widget.AppCompatEditText

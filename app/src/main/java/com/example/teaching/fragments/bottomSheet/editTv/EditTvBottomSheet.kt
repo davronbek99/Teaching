@@ -54,36 +54,43 @@ class EditTvBottomSheet(
             "lastname" -> {
                 binding.etSurname.setText(MySharedPreferences.getSurname(requireContext()))
                 binding.etSurname.hint = getString(R.string.tv_surname)
+                binding.tvSubject.setText(R.string.last_family_name)
             }
 
             "firstname" -> {
                 binding.etSurname.setText(MySharedPreferences.getFirstname(requireContext()))
                 binding.etSurname.hint = getString(R.string.tv_first_name)
+                binding.tvSubject.setText(R.string.tv_first_name)
             }
 
             "middlename" -> {
                 binding.etSurname.setText(MySharedPreferences.getMiddlename(requireContext()))
                 binding.etSurname.hint = getString(R.string.tv_et_middle_name)
+                binding.tvSubject.setText(R.string.tv_middle_name)
             }
 
             "date_of_birth" -> {
                 binding.etSurname.setText(MySharedPreferences.getDateOfBirth(requireContext()))
                 binding.etSurname.hint = getString(R.string.tv_date_of_birth)
+                binding.tvSubject.setText(R.string.tv_date_of_birth)
             }
 
             "phone_number" -> {
                 binding.etSurname.setText(MySharedPreferences.getPhone(requireContext()))
                 binding.etSurname.hint = getString(R.string.tv_phone_number)
+                binding.tvSubject.setText(R.string.tv_phone_number)
             }
 
             "email" -> {
                 binding.etSurname.setText(MySharedPreferences.getEmail(requireContext()))
                 binding.etSurname.hint = getString(R.string.tv_email)
+                binding.tvSubject.setText(R.string.tv_email)
             }
 
             "address" -> {
                 binding.etSurname.setText(MySharedPreferences.getAddress(requireContext()))
                 binding.etSurname.hint = getString(R.string.tv_address)
+                binding.tvSubject.setText(R.string.tv_address)
             }
         }
     }
